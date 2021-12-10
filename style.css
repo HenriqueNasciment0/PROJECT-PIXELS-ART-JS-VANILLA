@@ -1,48 +1,47 @@
 #title {
-    text-align: center;
+  text-align: center;
 }
 
 #color-palette {
-   width: 250px;
-   margin-left: auto;
-   margin-right: auto;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .color {
-    display: inline-block;
-    width: 5ex;
-    height: 5ex;
-    border: solid black 1px;
-    margin: 10px;
-    text-align: center;
-    
+  display: inline-block;
+  width: 5ex;
+  height: 5ex;
+  border: solid black 1px;
+  margin: 10px;
+  text-align: center;
 }
 
 #preta {
-    background-color: black;
+  background-color: black;
 }
 #verde {
-    background-color: green;
+  background-color: green;
 }
 #amarelo {
-    background-color: yellow;
+  background-color: yellow;
 }
 #vermelho {
-    background-color: red;
+  background-color: red;
 }
 
-#pixel-board{
-   border: solid white 1px;
-   width: 250px;
-   height: 250px;
-   display: inline-block;
-   margin-left: 207px;
+#pixel-board {
+  border: solid white 1px;
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  margin-left: 207px;
 }
 
 .pixel {
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    display: inline-block;
-    border: solid black 1px;
-  }
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: inline-block;
+  border: solid black 1px;
+}
