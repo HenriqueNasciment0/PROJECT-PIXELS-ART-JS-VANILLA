@@ -2,6 +2,7 @@ const board = document.getElementById('pixel-board');
 const paletas = document.querySelector('.paletas');
 const paleta = document.getElementsByClassName('selected');
 const pixel = document.getElementsByClassName('pixel');
+const btnLimpar = document.getElementById('clear-board');
 
 function criandoGrade(quadro) {
   for (let index = 1; index <= quadro; index += 1) {
@@ -54,3 +55,12 @@ function pintaPixel(e) {
 }
 
 board.addEventListener('click', pintaPixel);
+
+function botaoLimpar() {
+  for(let i = 0; i < board.children.length; i += 1) {
+    const limpar = board.children[i];
+    limpar.style.backgroundColor = 'white';
+  }
+}
+
+btnLimpar.addEventListener('click', botaoLimpar);

@@ -4,13 +4,12 @@ body {
 }
 
 #title {
-  text-align: center;
+  
 }
 
 #color-palette {
   width: 250px;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 
 .color {
@@ -26,10 +25,10 @@ body {
 
 #pixel-board {
   border: solid white 1px;
-  width: 210px;
   height: 210px;
   display: inline-block;
-  margin-left: 135px;
+  width: 210px;
+  margin-top: 10px;
 }
 
 .pixel {
@@ -40,6 +39,12 @@ body {
   border: solid black 1px;
 }
 
-.selected {
-  
+#clear-board {
+  background-color: black;
+  color: white;
+  border-radius: 15%;
+  border: solid 2px greenyellow;
+  width: 70px;
+  display: block;
+
 }
