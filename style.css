@@ -20,20 +20,9 @@ body {
   border: solid black 1px;
   margin: 10px;
   text-align: center;
+  
 }
 
-#preta {
-  background-color: black;
-}
-#verde {
-  background-color: green;
-}
-#amarelo {
-  background-color: yellow;
-}
-#vermelho {
-  background-color: red;
-}
 
 #pixel-board {
   border: solid white 1px;
@@ -52,5 +41,5 @@ body {
 }
 
 .selected {
- 
+  
 }
