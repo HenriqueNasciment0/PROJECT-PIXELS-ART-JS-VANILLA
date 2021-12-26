@@ -66,11 +66,21 @@ btnLimpar.addEventListener('click', botaoLimpar);
 function criarGradeComBotao() {
   board.innerHTML = ' ';
   const quantosPixels = inputBtn.value;
-  inputBtn.focus();
-  criandoGrade(quantosPixels * quantosPixels);
   if (inputBtn.value.length < [1]) {
     alert('Board inválido!');
   }
+  criandoGrade(quantosPixels * quantosPixels);
 }
 
 btnCriarPixel.addEventListener('click', criarGradeComBotao);
+
+function limitadorDePixel() {
+  if (inputBtn.value < 5) {
+    inputBtn.value = 5;
+  }
+  if (inputBtn.value > 50) {
+    inputBtn.value = 50;
+  }
+}
+
+inputBtn.addEventListener('mouseout', limitadorDePixel);
