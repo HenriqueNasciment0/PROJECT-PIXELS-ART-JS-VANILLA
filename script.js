@@ -3,15 +3,14 @@ const paletas = document.querySelector('.paletas');
 const paleta = document.getElementsByClassName('selected');
 const pixel = document.getElementsByClassName('pixel');
 const btnLimpar = document.getElementById('clear-board');
+const inputBtn = document.getElementById('board-size');
+const btnCriarPixel = document.getElementById('generate-board');
 
-function criandoGrade(quadro) {
-  for (let index = 1; index <= quadro; index += 1) {
+function criandoGrade(num) {
+  for (let i = 0; i < num; i += 1) {
     const linha = document.createElement('div');
     linha.className = 'pixel';
     board.appendChild(linha);
-
-    const pixel = document.createElement('div');
-    linha.appendChild(pixel);
   }
 }
 criandoGrade(25);
@@ -23,7 +22,7 @@ function criaPaleta() {
   coresPaleta.style.backgroundColor = 'black';
   paletas.appendChild(coresPaleta);
   for (let i = 1; i < 4; i += 1) {
-    let coresPaletaRandom = document.createElement('div');
+    const coresPaletaRandom = document.createElement('div');
     coresPaletaRandom.className = 'color';
     paletas.appendChild(coresPaletaRandom);
     coresPaletaRandom.style.backgroundColor = coresAleatorias();
@@ -49,18 +48,29 @@ function selecionaPaleta(e) {
 paletas.addEventListener('click', selecionaPaleta);
 
 function pintaPixel(e) {
- const recebeCor = paleta[0].style.backgroundColor;
- e.target.style.backgroundColor = recebeCor;
-
+  const recebeCor = paleta[0].style.backgroundColor;
+  e.target.style.backgroundColor = recebeCor;
 }
 
 board.addEventListener('click', pintaPixel);
 
 function botaoLimpar() {
-  for(let i = 0; i < board.children.length; i += 1) {
+  for (let i = 0; i < board.children.length; i += 1) {
     const limpar = board.children[i];
     limpar.style.backgroundColor = 'white';
   }
 }
 
 btnLimpar.addEventListener('click', botaoLimpar);
+
+function criarGradeComBotao() {
+  board.innerHTML = ' ';
+  const quantosPixels = inputBtn.value;
+  inputBtn.focus();
+  criandoGrade(quantosPixels * quantosPixels);
+  if (inputBtn.value.length < [1]) {
+    alert('Board inválido!');
+  }
+}
+
+btnCriarPixel.addEventListener('click', criarGradeComBotao);
