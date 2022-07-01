@@ -23,7 +23,7 @@ Esse foi um projeto individual, usando basicamente HTML, CSS e JavaSript Vanilla
  
 ## Rodando na sua máquina
 
-- digite o comando a serguir no seu terminal:
+- digite o comando a seguir no seu terminal:
 -  ___git clone git@github.com:HenriqueNasciment0/PROJETO-PIXELS-ART-JS-VANILLA.git___
 -  depois digite no terminal:
 -  ___cd PROJETO-PIXELS-ART-JS-VANILLA___
