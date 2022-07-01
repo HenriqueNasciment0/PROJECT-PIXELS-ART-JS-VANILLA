@@ -23,7 +23,11 @@ Esse foi um projeto individual, usando basicamente HTML, CSS e JavaSript Vanilla
  
 ## Rodando na sua máquina
 
-- digite o comando a serguir no seu terminal ___git clone git@github.com:HenriqueNasciment0/PROJETO-PIXELS-ART-JS-VANILLA.git____
+- digite o comando a serguir no seu terminal:
+-  ___git clone git@github.com:HenriqueNasciment0/PROJETO-PIXELS-ART-JS-VANILLA.git___
+-  depois digite no terminal:
+-  ___cd PROJETO-PIXELS-ART-JS-VANILLA___
+-  se estiver usando o VS Code, use a extensão Live Server, clique no canto inferior da tela do VS Code em "Go Live" após instalar a extensão
 
  ## Link do deploy da aplicação 
  ___https://pixels-art-henriquen.netlify.app/___
