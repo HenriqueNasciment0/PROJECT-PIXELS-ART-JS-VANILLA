@@ -13,7 +13,7 @@ function criandoGrade(num) {
     board.appendChild(linha);
   }
 }
-criandoGrade(25);
+criandoGrade(1200);
 
 function criaPaleta() {
   const coresPaleta = document.createElement('div');
@@ -21,7 +21,7 @@ function criaPaleta() {
   coresPaleta.classList.add('selected');
   coresPaleta.style.backgroundColor = 'black';
   paletas.appendChild(coresPaleta);
-  for (let i = 1; i < 4; i += 1) {
+  for (let i = 1; i < 10; i += 1) {
     const coresPaletaRandom = document.createElement('div');
     coresPaletaRandom.className = 'color';
     paletas.appendChild(coresPaletaRandom);
@@ -52,7 +52,7 @@ function pintaPixel(e) {
   e.target.style.backgroundColor = recebeCor;
 }
 
-board.addEventListener('click', pintaPixel);
+board.addEventListener('mouseover', pintaPixel);
 
 function botaoLimpar() {
   for (let i = 0; i < board.children.length; i += 1) {
@@ -69,7 +69,7 @@ function criarGradeComBotao() {
   if (inputBtn.value.length < [1]) {
     alert('Board inválido!');
   }
-  criandoGrade(quantosPixels * quantosPixels);
+  criandoGrade(quantosPixels * 50);
 }
 
 btnCriarPixel.addEventListener('click', criarGradeComBotao);
@@ -78,8 +78,9 @@ function limitadorDePixel() {
   if (inputBtn.value < 5) {
     inputBtn.value = 5;
   }
-  if (inputBtn.value > 50) {
-    inputBtn.value = 50;
+  if (inputBtn.value > 24) {
+    inputBtn.value = 24;
+    alert('Máximo 24')
   }
 }
 
