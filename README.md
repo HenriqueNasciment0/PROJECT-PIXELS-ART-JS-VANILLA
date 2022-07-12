@@ -24,7 +24,7 @@ Esse foi um projeto individual, usando basicamente HTML, CSS e JavaSript Vanilla
 ## Rodando na sua máquina
 
 - digite o comando a seguir no seu terminal:
--  ___git clone git@github.com:HenriqueNasciment0/PROJETO-PIXELS-ART-JS-VANILLA.git___
+-  ___git clone (git@github.com:HenriqueNasciment0/PROJETO-PIXELS-ART-JS-VANILLA.git)___
 -  depois digite no terminal:
 -  ___cd PROJETO-PIXELS-ART-JS-VANILLA___
 -  se estiver usando o VS Code, use a extensão Live Server, clique no canto inferior da tela do VS Code em "Go Live" após instalar a extensão
